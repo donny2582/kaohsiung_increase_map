@@ -1,0 +1,4091 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c38a0da6fa8085f81ca36dec333b9cd4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c38a0da6fa8085f81ca36dec333b9cd4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c38a0da6fa8085f81ca36dec333b9cd4 = L.map(
+                "map_c38a0da6fa8085f81ca36dec333b9cd4",
+                {
+                    center: [22.625, 120.355],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "drawExport": false,
+  "layersControl": true,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_c38a0da6fa8085f81ca36dec333b9cd4);
+
+            
+
+        
+    
+            var tile_layer_cdd37344c96db4b9d5d158039503eed1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 24,
+  "maxNativeZoom": 24,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_cdd37344c96db4b9d5d158039503eed1.addTo(map_c38a0da6fa8085f81ca36dec333b9cd4);
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topleft",
+  "title": "Full Screen",
+  "titleCancel": "Exit Full Screen",
+  "forceSeparateButton": false,
+}
+            ).addTo(map_c38a0da6fa8085f81ca36dec333b9cd4);
+        
+    
+            map_c38a0da6fa8085f81ca36dec333b9cd4.fitBounds(
+                [[22.625, 120.355], [22.625, 120.355]],
+                {"maxZoom": 14}
+            );
+        
+    
+            var feature_group_702ff30e80bec209a4020ccaa7f3a9c7 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_7a6b4cf81d6fd1b5e883d2e7bde941f1 = L.circleMarker(
+                [22.595, 120.355],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_7a6b4cf81d6fd1b5e883d2e7bde941f1.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d7e045eaa483bf8d1473db26e134cc1d = L.circleMarker(
+                [22.594, 120.328],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d7e045eaa483bf8d1473db26e134cc1d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6bde1caca691318ec34fb2f6bfbafa6d = L.circleMarker(
+                [22.597, 120.335],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_6bde1caca691318ec34fb2f6bfbafa6d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bc908ff369d94d2b58a62bd3d1c8ca5c = L.circleMarker(
+                [22.615, 120.352],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_bc908ff369d94d2b58a62bd3d1c8ca5c.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1392f5da55fe13e4ec57be587f0d5f46 = L.circleMarker(
+                [22.612, 120.35],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_1392f5da55fe13e4ec57be587f0d5f46.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_834347b4734c8c5c9fa06052c3b927df = L.circleMarker(
+                [22.614, 120.348],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_834347b4734c8c5c9fa06052c3b927df.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5830c0032e6f581c78c685009c485b3 = L.circleMarker(
+                [22.615, 120.348],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e5830c0032e6f581c78c685009c485b3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0baee62208f27c1c3479bfc145076e3 = L.circleMarker(
+                [22.594, 120.326],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e0baee62208f27c1c3479bfc145076e3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f02e48103ec36349596a550af504b7e4 = L.circleMarker(
+                [22.597, 120.338],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_f02e48103ec36349596a550af504b7e4.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a71f9cbb27113ff366118ae05f22bf60 = L.circleMarker(
+                [22.597, 120.334],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_a71f9cbb27113ff366118ae05f22bf60.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_864b165aac112a26e15fe494b5579798 = L.circleMarker(
+                [22.588, 120.332],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_864b165aac112a26e15fe494b5579798.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e4803362d00ef9c2142ffd4cd1f50d93 = L.circleMarker(
+                [22.627, 120.362],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e4803362d00ef9c2142ffd4cd1f50d93.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_49ad3161a7d2764219397412228881b5 = L.circleMarker(
+                [22.62, 120.356],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_49ad3161a7d2764219397412228881b5.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0facdf0cb73e2650cbb31b1fdf458728 = L.circleMarker(
+                [22.64, 120.351],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_0facdf0cb73e2650cbb31b1fdf458728.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ac25f355567da44535686d0ee2311a6d = L.circleMarker(
+                [22.629, 120.356],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_ac25f355567da44535686d0ee2311a6d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5064025fcab72e6e6dd2eaf79523391c = L.circleMarker(
+                [22.636, 120.377],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_5064025fcab72e6e6dd2eaf79523391c.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9427daaeb6835853d90153940f9c11aa = L.circleMarker(
+                [22.646, 120.351],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_9427daaeb6835853d90153940f9c11aa.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_43213c3ab69a1335e3a799937b763351 = L.circleMarker(
+                [22.626, 120.356],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_43213c3ab69a1335e3a799937b763351.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5a7ff1cc452368b420f28104982c93f1 = L.circleMarker(
+                [22.628, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_5a7ff1cc452368b420f28104982c93f1.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_717b847bb90a02293cc1f05bf0deaae2 = L.circleMarker(
+                [22.619, 120.355],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_717b847bb90a02293cc1f05bf0deaae2.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf7eaaec5d0f30747ed8676057f5495d = L.circleMarker(
+                [22.637, 120.364],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_bf7eaaec5d0f30747ed8676057f5495d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a320aeb01f4efd5dc5b1f4b168304753 = L.circleMarker(
+                [22.636, 120.358],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_a320aeb01f4efd5dc5b1f4b168304753.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f452e4be0b723b8f23e4ddb95296fdc = L.circleMarker(
+                [22.641, 120.363],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_2f452e4be0b723b8f23e4ddb95296fdc.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b0b1b68ae48c6ef7738fe49b5e1f94cc = L.circleMarker(
+                [22.637, 120.371],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b0b1b68ae48c6ef7738fe49b5e1f94cc.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_282dc494f400e54c05e332977278bc3c = L.circleMarker(
+                [22.641, 120.357],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_282dc494f400e54c05e332977278bc3c.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d4159e8a0999deab5cad399737968072 = L.circleMarker(
+                [22.641, 120.364],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d4159e8a0999deab5cad399737968072.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95ea47ff1dc826eb288967b7f3c99c51 = L.circleMarker(
+                [22.638, 120.351],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_95ea47ff1dc826eb288967b7f3c99c51.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ef0b1081ad0072db2ca18812489586f = L.circleMarker(
+                [22.607, 120.363],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_6ef0b1081ad0072db2ca18812489586f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_25b59eec7eed88087235f4383155a039 = L.circleMarker(
+                [22.619, 120.356],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_25b59eec7eed88087235f4383155a039.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_defb8de3d5875064240ce25de859f426 = L.circleMarker(
+                [22.626, 120.361],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_defb8de3d5875064240ce25de859f426.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_17f3f5f6117b39e9d8a3717c0816e180 = L.circleMarker(
+                [22.625, 120.374],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_17f3f5f6117b39e9d8a3717c0816e180.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2806012f00dc7d48eb7eeb28346876f1 = L.circleMarker(
+                [22.611, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_2806012f00dc7d48eb7eeb28346876f1.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 2.0 件 (2月: 0.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04af704d8a51f35c4b268e0e9e15185e = L.circleMarker(
+                [22.591, 120.347],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_04af704d8a51f35c4b268e0e9e15185e.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6ae2334c5400f24329648de66502c55f = L.circleMarker(
+                [22.59, 120.329],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_6ae2334c5400f24329648de66502c55f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c03afafa540b15e5e3d6740e1799919d = L.circleMarker(
+                [22.59, 120.328],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_c03afafa540b15e5e3d6740e1799919d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1e7349c39db2110689efae05d6273d1b = L.circleMarker(
+                [22.588, 120.365],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_1e7349c39db2110689efae05d6273d1b.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e5cd847f1e70ce9ccc7cf1cfd342e92 = L.circleMarker(
+                [22.591, 120.332],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_7e5cd847f1e70ce9ccc7cf1cfd342e92.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3fdec4a4c1cf470784aa8259ada4d87f = L.circleMarker(
+                [22.591, 120.33],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_3fdec4a4c1cf470784aa8259ada4d87f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fbad3b8f21a0fd48c316dd23dec20421 = L.circleMarker(
+                [22.591, 120.327],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_fbad3b8f21a0fd48c316dd23dec20421.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f83bbf3924dd85cd8c92a99fb3e04de = L.circleMarker(
+                [22.59, 120.365],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_2f83bbf3924dd85cd8c92a99fb3e04de.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f76c35bebcc204cd9b1fd12981a81bec = L.circleMarker(
+                [22.59, 120.359],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_f76c35bebcc204cd9b1fd12981a81bec.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_893ff0636450ebb693fd9b7520c6f3a9 = L.circleMarker(
+                [22.59, 120.322],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_893ff0636450ebb693fd9b7520c6f3a9.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6bcf6ea824703ed2826b7a1b22eac2e0 = L.circleMarker(
+                [22.589, 120.364],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_6bcf6ea824703ed2826b7a1b22eac2e0.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7914e6b448d2bd5a53934a5a0f0ff761 = L.circleMarker(
+                [22.6, 120.339],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_7914e6b448d2bd5a53934a5a0f0ff761.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54644729da111e45b243a9d4dfeab7c3 = L.circleMarker(
+                [22.6, 120.334],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_54644729da111e45b243a9d4dfeab7c3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_64e627daa142bb6066870b2e18fc93cf = L.circleMarker(
+                [22.6, 120.332],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_64e627daa142bb6066870b2e18fc93cf.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c28f5a12317449913e52b54528ec241d = L.circleMarker(
+                [22.599, 120.352],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_c28f5a12317449913e52b54528ec241d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0a29d0219a46cf726e2bedb4485a6b7 = L.circleMarker(
+                [22.599, 120.341],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d0a29d0219a46cf726e2bedb4485a6b7.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c6d02775c0fcd3c5f3f347bbdcc58efb = L.circleMarker(
+                [22.599, 120.328],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_c6d02775c0fcd3c5f3f347bbdcc58efb.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9ce0ee0e3f259f77b41b07ec5db57b7 = L.circleMarker(
+                [22.598, 120.329],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_f9ce0ee0e3f259f77b41b07ec5db57b7.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6bf9e851490c3daaf23a497c66fb45f1 = L.circleMarker(
+                [22.598, 120.333],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_6bf9e851490c3daaf23a497c66fb45f1.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc09b1d5551ffdcf8d044208f74acf3b = L.circleMarker(
+                [22.602, 120.336],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_cc09b1d5551ffdcf8d044208f74acf3b.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_896bc10e5a066347fa66c13c2dd98fc4 = L.circleMarker(
+                [22.602, 120.338],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_896bc10e5a066347fa66c13c2dd98fc4.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4af24bbb535f047cc23b6b4a2b8db4af = L.circleMarker(
+                [22.602, 120.342],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_4af24bbb535f047cc23b6b4a2b8db4af.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba2a4b47565c7e4d8bdf78dc6ce1a7d0 = L.circleMarker(
+                [22.6, 120.343],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_ba2a4b47565c7e4d8bdf78dc6ce1a7d0.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c2fc1f68c826c0256fa45c868ce835ec = L.circleMarker(
+                [22.601, 120.348],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_c2fc1f68c826c0256fa45c868ce835ec.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4597f66bed9ca1fd6d8721846cf38ef5 = L.circleMarker(
+                [22.6, 120.351],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_4597f66bed9ca1fd6d8721846cf38ef5.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d37c5f8f42f1bb1f7d2aec39128bc421 = L.circleMarker(
+                [22.6, 120.353],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d37c5f8f42f1bb1f7d2aec39128bc421.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b59f303882b046bbf143b2dcd99c2699 = L.circleMarker(
+                [22.601, 120.336],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b59f303882b046bbf143b2dcd99c2699.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a126021363ec3c1119a07fa9d67be07f = L.circleMarker(
+                [22.604, 120.345],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_a126021363ec3c1119a07fa9d67be07f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_405771603fd10873b348060df5396571 = L.circleMarker(
+                [22.604, 120.338],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_405771603fd10873b348060df5396571.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_12cab9424b4f07b948b9e36337e1edeb = L.circleMarker(
+                [22.603, 120.343],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_12cab9424b4f07b948b9e36337e1edeb.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6e7064632c907495eb19e2368a0b0687 = L.circleMarker(
+                [22.605, 120.338],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_6e7064632c907495eb19e2368a0b0687.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c9aa317f7d8e2c93d80c97a41dc1de8a = L.circleMarker(
+                [22.607, 120.354],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_c9aa317f7d8e2c93d80c97a41dc1de8a.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04632a55515c9cf5700f8af2a7c103a9 = L.circleMarker(
+                [22.607, 120.357],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_04632a55515c9cf5700f8af2a7c103a9.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_50ae46eaa507b37193172387eff21c73 = L.circleMarker(
+                [22.607, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_50ae46eaa507b37193172387eff21c73.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_503465bf9ac812352b99addd614e81f5 = L.circleMarker(
+                [22.607, 120.347],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_503465bf9ac812352b99addd614e81f5.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_caba7048e408de4c11d1bca7cf3ac022 = L.circleMarker(
+                [22.608, 120.345],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_caba7048e408de4c11d1bca7cf3ac022.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_08c88bc798bb7784e2764996d9fef75b = L.circleMarker(
+                [22.607, 120.36],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_08c88bc798bb7784e2764996d9fef75b.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9ba7f84c959b4aa67642450e451a3095 = L.circleMarker(
+                [22.609, 120.345],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_9ba7f84c959b4aa67642450e451a3095.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cefa7469b402f8db225090d006bcb657 = L.circleMarker(
+                [22.603, 120.336],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_cefa7469b402f8db225090d006bcb657.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f85a9f4f86c000e936a370c9c59d2ea3 = L.circleMarker(
+                [22.603, 120.338],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_f85a9f4f86c000e936a370c9c59d2ea3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01268df01e46c6f48be40b24481c1570 = L.circleMarker(
+                [22.602, 120.332],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_01268df01e46c6f48be40b24481c1570.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_71d6afd2583db8dae12feaf523e413a9 = L.circleMarker(
+                [22.602, 120.333],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_71d6afd2583db8dae12feaf523e413a9.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 1.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c4745497b579f5a32e4d9f5137392c3 = L.circleMarker(
+                [22.602, 120.334],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_1c4745497b579f5a32e4d9f5137392c3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4b3c279a4e2a5162876feb5e62cc24c = L.circleMarker(
+                [22.611, 120.34],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_c4b3c279a4e2a5162876feb5e62cc24c.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fb5fb11272c490a7875b8de967d0a6f9 = L.circleMarker(
+                [22.611, 120.336],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_fb5fb11272c490a7875b8de967d0a6f9.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a22eb87b46fd6b63718bc9f59ff93ceb = L.circleMarker(
+                [22.609, 120.356],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_a22eb87b46fd6b63718bc9f59ff93ceb.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ba209a7a64821ad1eb59567ee577a96 = L.circleMarker(
+                [22.61, 120.342],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_1ba209a7a64821ad1eb59567ee577a96.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f22ebb514e13fbd0b31103a93a9a94b9 = L.circleMarker(
+                [22.609, 120.348],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_f22ebb514e13fbd0b31103a93a9a94b9.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7b49dc3dafbd628d5e25ba543e179f71 = L.circleMarker(
+                [22.613, 120.333],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_7b49dc3dafbd628d5e25ba543e179f71.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad293790f662c89ba6498a08027d8243 = L.circleMarker(
+                [22.613, 120.332],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_ad293790f662c89ba6498a08027d8243.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c3f60b05f42a8c0dc8359fd9c7a6242b = L.circleMarker(
+                [22.611, 120.362],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_c3f60b05f42a8c0dc8359fd9c7a6242b.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d43f1c79bc178b4a4763c587e64bdb70 = L.circleMarker(
+                [22.613, 120.347],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d43f1c79bc178b4a4763c587e64bdb70.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2baefc8b3265a6f25a16918f09e197f3 = L.circleMarker(
+                [22.594, 120.325],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_2baefc8b3265a6f25a16918f09e197f3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e5cc104e56b70a8a5303cd8dcbf699ad = L.circleMarker(
+                [22.595, 120.33],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e5cc104e56b70a8a5303cd8dcbf699ad.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_199857dbf778bcc6e0dfd1f8c995fbc3 = L.circleMarker(
+                [22.593, 120.359],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_199857dbf778bcc6e0dfd1f8c995fbc3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b378a91fbcf1fd716ee662e598c86356 = L.circleMarker(
+                [22.593, 120.338],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b378a91fbcf1fd716ee662e598c86356.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_66d8659633632b5b94c23a9734908a0e = L.circleMarker(
+                [22.593, 120.346],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_66d8659633632b5b94c23a9734908a0e.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9750cba19d838a4a203b56d9cadc225 = L.circleMarker(
+                [22.592, 120.338],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b9750cba19d838a4a203b56d9cadc225.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f9c8de8f1b4e4ba23491aba7bb932c3f = L.circleMarker(
+                [22.591, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_f9c8de8f1b4e4ba23491aba7bb932c3f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19d89006584a754b9cd9ad0444cdb923 = L.circleMarker(
+                [22.596, 120.336],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_19d89006584a754b9cd9ad0444cdb923.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6bed8cf283f1c44d93a2aab5c438412b = L.circleMarker(
+                [22.596, 120.331],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_6bed8cf283f1c44d93a2aab5c438412b.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc7ee6fa05faf75dd3df5761785478a3 = L.circleMarker(
+                [22.596, 120.326],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_fc7ee6fa05faf75dd3df5761785478a3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_493f93ea120420533e7bf44c24e7790f = L.circleMarker(
+                [22.596, 120.323],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_493f93ea120420533e7bf44c24e7790f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f703a535bb8f4d6ad519697e99f62b01 = L.circleMarker(
+                [22.595, 120.335],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_f703a535bb8f4d6ad519697e99f62b01.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_281c5cb79827745b194ad6cd13c81948 = L.circleMarker(
+                [22.597, 120.355],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_281c5cb79827745b194ad6cd13c81948.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5756f137354353b72207175bf39f88f3 = L.circleMarker(
+                [22.597, 120.339],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_5756f137354353b72207175bf39f88f3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7414a1e5b50ab4b161c35ec7e60c735f = L.circleMarker(
+                [22.596, 120.344],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_7414a1e5b50ab4b161c35ec7e60c735f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26a27f0b4330685139f13277d64f58fb = L.circleMarker(
+                [22.587, 120.364],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_26a27f0b4330685139f13277d64f58fb.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1fb1a61e2ef2f850103bed3eab280106 = L.circleMarker(
+                [22.587, 120.346],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_1fb1a61e2ef2f850103bed3eab280106.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c7840524752ebb6cc4a37dd3633ac9a = L.circleMarker(
+                [22.588, 120.354],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_3c7840524752ebb6cc4a37dd3633ac9a.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3d990343e2d594254e12575e77c5dd4f = L.circleMarker(
+                [22.588, 120.338],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_3d990343e2d594254e12575e77c5dd4f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61a32da88c3a77f0c93dc5f5c980de2d = L.circleMarker(
+                [22.589, 120.33],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_61a32da88c3a77f0c93dc5f5c980de2d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3a248985d01e321aa213e3c6911e721a = L.circleMarker(
+                [22.586, 120.355],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_3a248985d01e321aa213e3c6911e721a.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2b912f05fc9a8dd779efeacb01f3b74 = L.circleMarker(
+                [22.585, 120.359],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b2b912f05fc9a8dd779efeacb01f3b74.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d257a125b8dcb7b94a04e50967a2ed67 = L.circleMarker(
+                [22.567, 120.364],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d257a125b8dcb7b94a04e50967a2ed67.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40acba3c30585090e5192b2e2f4aee53 = L.circleMarker(
+                [22.618, 120.354],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_40acba3c30585090e5192b2e2f4aee53.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e1de49ccd209fbc2fd51e407b92fa2d = L.circleMarker(
+                [22.618, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_5e1de49ccd209fbc2fd51e407b92fa2d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d935448057d126620ff44c696e289088 = L.circleMarker(
+                [22.617, 120.354],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d935448057d126620ff44c696e289088.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d208dcfa8ed0c809b3a4a558ff3a4432 = L.circleMarker(
+                [22.617, 120.353],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d208dcfa8ed0c809b3a4a558ff3a4432.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db9e27d97659e481478be6c936cde49d = L.circleMarker(
+                [22.617, 120.352],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_db9e27d97659e481478be6c936cde49d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47628489a550d1c91111b12a8339ff04 = L.circleMarker(
+                [22.617, 120.346],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_47628489a550d1c91111b12a8339ff04.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a41ba1174b78443435c009d081dbaf9 = L.circleMarker(
+                [22.617, 120.333],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_1a41ba1174b78443435c009d081dbaf9.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3c3109606eeda5864f623f72665f1678 = L.circleMarker(
+                [22.616, 120.353],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_3c3109606eeda5864f623f72665f1678.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 1.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dac30cb197c620a1d2b9c6e6dbd6f924 = L.circleMarker(
+                [22.616, 120.345],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_dac30cb197c620a1d2b9c6e6dbd6f924.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba5c94acb1fc5bd77558e88869ac6558 = L.circleMarker(
+                [22.616, 120.337],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_ba5c94acb1fc5bd77558e88869ac6558.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9bafac9d6cc380da6d24d7a7db433551 = L.circleMarker(
+                [22.615, 120.363],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_9bafac9d6cc380da6d24d7a7db433551.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aeb555754753b388627ce912a93d0d4d = L.circleMarker(
+                [22.615, 120.356],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_aeb555754753b388627ce912a93d0d4d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_199b0d49768c0c3fd90965eda0c67ef8 = L.circleMarker(
+                [22.615, 120.353],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_199b0d49768c0c3fd90965eda0c67ef8.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37dece03175e664a2e01673965c67707 = L.circleMarker(
+                [22.615, 120.35],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_37dece03175e664a2e01673965c67707.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3ae29b65326aa0a63257a9f7dd9592d2 = L.circleMarker(
+                [22.614, 120.345],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_3ae29b65326aa0a63257a9f7dd9592d2.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5e67250df8a33034d4d541a12ab7314 = L.circleMarker(
+                [22.614, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_a5e67250df8a33034d4d541a12ab7314.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_559e4b3cc58d9a85fcaab26283fa2166 = L.circleMarker(
+                [22.612, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_559e4b3cc58d9a85fcaab26283fa2166.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2581b42ee6239cad2b5d11fef8ba46ee = L.circleMarker(
+                [22.612, 120.346],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_2581b42ee6239cad2b5d11fef8ba46ee.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_034723a1dad6215355e9f4021d328c4f = L.circleMarker(
+                [22.614, 120.339],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_034723a1dad6215355e9f4021d328c4f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e7ee17a1d2c5a229f6067f2ce3844de7 = L.circleMarker(
+                [22.614, 120.337],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e7ee17a1d2c5a229f6067f2ce3844de7.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_927ccb8536bad30b674a032e997b7765 = L.circleMarker(
+                [22.613, 120.36],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_927ccb8536bad30b674a032e997b7765.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b357cefa5d663ae55bf7107b5be94af0 = L.circleMarker(
+                [22.613, 120.37],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b357cefa5d663ae55bf7107b5be94af0.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6318f6cbf72b53380bbb3c632816674f = L.circleMarker(
+                [22.613, 120.343],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_6318f6cbf72b53380bbb3c632816674f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ba2e11abdbe622b7df6cbd682f4264bf = L.circleMarker(
+                [22.622, 120.377],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_ba2e11abdbe622b7df6cbd682f4264bf.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3cd5c9e432ce35b988834f8e75788916 = L.circleMarker(
+                [22.622, 120.357],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_3cd5c9e432ce35b988834f8e75788916.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e532eb3f5708ec11584f2662d820c4d9 = L.circleMarker(
+                [22.622, 120.376],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e532eb3f5708ec11584f2662d820c4d9.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b898ae3145a06481b10490e4d39106c = L.circleMarker(
+                [22.62, 120.358],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_1b898ae3145a06481b10490e4d39106c.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_528848bab8477be685b12d33eb799b84 = L.circleMarker(
+                [22.619, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_528848bab8477be685b12d33eb799b84.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5756527a02c8cf8588082d96abffc0ee = L.circleMarker(
+                [22.618, 120.355],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_5756527a02c8cf8588082d96abffc0ee.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61875edb74a1c1659d21762c4048a9cf = L.circleMarker(
+                [22.619, 120.362],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_61875edb74a1c1659d21762c4048a9cf.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c60f578b33879fd03a3886ce1371b3f3 = L.circleMarker(
+                [22.62, 120.346],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_c60f578b33879fd03a3886ce1371b3f3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c7cb10ed363cdbac518bdc1055577d0 = L.circleMarker(
+                [22.62, 120.355],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_0c7cb10ed363cdbac518bdc1055577d0.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f0a2993a2dc6d132d774beea81b104a = L.circleMarker(
+                [22.625, 120.361],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_8f0a2993a2dc6d132d774beea81b104a.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b462169d66748f3095d425712987d466 = L.circleMarker(
+                [22.625, 120.359],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b462169d66748f3095d425712987d466.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_976368c62f78fbfec60c57aee7550dc4 = L.circleMarker(
+                [22.625, 120.346],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_976368c62f78fbfec60c57aee7550dc4.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_166223ef930ce896e012076fcb3c789f = L.circleMarker(
+                [22.625, 120.345],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_166223ef930ce896e012076fcb3c789f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 1.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0c806c572c90bc1660c39ae0d7843bae = L.circleMarker(
+                [22.625, 120.344],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_0c806c572c90bc1660c39ae0d7843bae.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b525f0ef37805ade3985a70229a2d1a3 = L.circleMarker(
+                [22.624, 120.381],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b525f0ef37805ade3985a70229a2d1a3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42bb8bd0b4fe93deb50a3aae00f57f97 = L.circleMarker(
+                [22.624, 120.37],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_42bb8bd0b4fe93deb50a3aae00f57f97.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbf6db499d871420fec0a334f8d9d6e8 = L.circleMarker(
+                [22.626, 120.34],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_bbf6db499d871420fec0a334f8d9d6e8.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 2.0 -> 3月: 3.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae1d9a64c4a552d2feef034ca31584a6 = L.circleMarker(
+                [22.626, 120.355],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_ae1d9a64c4a552d2feef034ca31584a6.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 1.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e1b20867c0bf5f683304763c59c4613 = L.circleMarker(
+                [22.626, 120.354],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_8e1b20867c0bf5f683304763c59c4613.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 1.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d3eb36de6e8d133181384363f34a7f84 = L.circleMarker(
+                [22.626, 120.357],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d3eb36de6e8d133181384363f34a7f84.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_93c88131eac5f0cc5a1e78219431f0cb = L.circleMarker(
+                [22.626, 120.366],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_93c88131eac5f0cc5a1e78219431f0cb.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8dad98e4e7a3fda49aadb495cbb0885f = L.circleMarker(
+                [22.626, 120.374],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_8dad98e4e7a3fda49aadb495cbb0885f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_88b80abe2e4736a647753f5f903977ef = L.circleMarker(
+                [22.626, 120.35],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_88b80abe2e4736a647753f5f903977ef.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f475932b1d2e1cd921f46eace46a5090 = L.circleMarker(
+                [22.625, 120.365],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_f475932b1d2e1cd921f46eace46a5090.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3dc60415a7ea08252bae6b607ee4594d = L.circleMarker(
+                [22.625, 120.362],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_3dc60415a7ea08252bae6b607ee4594d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ae220b069e8dca3c8ace4fb85281eae8 = L.circleMarker(
+                [22.627, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_ae220b069e8dca3c8ace4fb85281eae8.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5e19bfa37caf90568905e4dfcf7ff15f = L.circleMarker(
+                [22.627, 120.345],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_5e19bfa37caf90568905e4dfcf7ff15f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_266235bb91f8ed2500ed9515ebe81f80 = L.circleMarker(
+                [22.626, 120.375],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_266235bb91f8ed2500ed9515ebe81f80.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 1.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2be954cb015086a7578b8e4c53608d18 = L.circleMarker(
+                [22.623, 120.358],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_2be954cb015086a7578b8e4c53608d18.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e12e24f7ff581b8f188aec67c81a9924 = L.circleMarker(
+                [22.623, 120.36],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e12e24f7ff581b8f188aec67c81a9924.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b1bfc45c6ebf26140cd9ffab874a5d0a = L.circleMarker(
+                [22.623, 120.363],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b1bfc45c6ebf26140cd9ffab874a5d0a.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_94b70635319a3ffee08709e4c2827d91 = L.circleMarker(
+                [22.623, 120.368],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_94b70635319a3ffee08709e4c2827d91.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_91515079f53bc144d1d4e19240249947 = L.circleMarker(
+                [22.623, 120.38],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_91515079f53bc144d1d4e19240249947.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_40fb293d9b10b9951fe9bc359e0669cd = L.circleMarker(
+                [22.624, 120.344],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_40fb293d9b10b9951fe9bc359e0669cd.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7d07d38cc5f5956d59049f1d66cf8981 = L.circleMarker(
+                [22.62, 120.359],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_7d07d38cc5f5956d59049f1d66cf8981.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8b1790402dc23a35ff8e77f10a4f351a = L.circleMarker(
+                [22.621, 120.346],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_8b1790402dc23a35ff8e77f10a4f351a.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_415afe46736adc01125a8a919ce84138 = L.circleMarker(
+                [22.621, 120.352],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_415afe46736adc01125a8a919ce84138.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eaebb7c737cd449b96d8445fc2b8a2ba = L.circleMarker(
+                [22.621, 120.363],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_eaebb7c737cd449b96d8445fc2b8a2ba.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 1.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b7449f8e924a713475c594a1a529f14b = L.circleMarker(
+                [22.621, 120.364],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b7449f8e924a713475c594a1a529f14b.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6276053f5a65e82e98c205e47c982c85 = L.circleMarker(
+                [22.622, 120.35],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_6276053f5a65e82e98c205e47c982c85.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f3d36b60655f9c4052b5cc2b7468d52b = L.circleMarker(
+                [22.622, 120.353],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_f3d36b60655f9c4052b5cc2b7468d52b.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7307b8b783be255610d6f6099c648774 = L.circleMarker(
+                [22.629, 120.341],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_7307b8b783be255610d6f6099c648774.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4c893e046e10c6164b45694cd339c71 = L.circleMarker(
+                [22.628, 120.35],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_c4c893e046e10c6164b45694cd339c71.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d032cb82d279d7f5478bcb4ac164f028 = L.circleMarker(
+                [22.627, 120.384],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d032cb82d279d7f5478bcb4ac164f028.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_45292c7dcdc2282b8a045d2d747a6bff = L.circleMarker(
+                [22.628, 120.346],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_45292c7dcdc2282b8a045d2d747a6bff.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b254f965d4c878d9200f6dfde7e6622c = L.circleMarker(
+                [22.627, 120.378],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b254f965d4c878d9200f6dfde7e6622c.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b86357cfe969462e852d101bb06862d7 = L.circleMarker(
+                [22.627, 120.373],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b86357cfe969462e852d101bb06862d7.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_82dc75410d46244eb84f4b17e497849f = L.circleMarker(
+                [22.627, 120.358],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_82dc75410d46244eb84f4b17e497849f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d884fb5789f5c8f4bd8c1f145c708247 = L.circleMarker(
+                [22.627, 120.36],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d884fb5789f5c8f4bd8c1f145c708247.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_27be2945c8d9c670fe2b1a3f6844e60b = L.circleMarker(
+                [22.627, 120.352],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_27be2945c8d9c670fe2b1a3f6844e60b.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e8ca49be0a33fad80537068ecc655b6c = L.circleMarker(
+                [22.627, 120.355],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e8ca49be0a33fad80537068ecc655b6c.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3978464955b712cc25f1950caf0da74c = L.circleMarker(
+                [22.627, 120.357],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_3978464955b712cc25f1950caf0da74c.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cbaabf37f10c47b420413991b913638e = L.circleMarker(
+                [22.627, 120.356],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_cbaabf37f10c47b420413991b913638e.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2836a8b8f54e27bcbc3befa1398c8194 = L.circleMarker(
+                [22.627, 120.351],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_2836a8b8f54e27bcbc3befa1398c8194.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b862537f39c210d8fc1addf29f68d077 = L.circleMarker(
+                [22.629, 120.361],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b862537f39c210d8fc1addf29f68d077.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fd3b377c0c632836caa911737397c3f2 = L.circleMarker(
+                [22.629, 120.346],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_fd3b377c0c632836caa911737397c3f2.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5c040edc7da8335039ed011f3e858963 = L.circleMarker(
+                [22.629, 120.345],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_5c040edc7da8335039ed011f3e858963.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fc14afbd6bc3cf4b6886e54259de5b00 = L.circleMarker(
+                [22.631, 120.35],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_fc14afbd6bc3cf4b6886e54259de5b00.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b224619040b86c81f61eafd0ef2ae65f = L.circleMarker(
+                [22.631, 120.361],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_b224619040b86c81f61eafd0ef2ae65f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_01ed05bbcca68a85a47f082a93f9cbdb = L.circleMarker(
+                [22.631, 120.368],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_01ed05bbcca68a85a47f082a93f9cbdb.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_683a586dd7911cf18b7375606085d3ab = L.circleMarker(
+                [22.631, 120.38],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_683a586dd7911cf18b7375606085d3ab.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bf7ad260eda6e06a544006e7282ba0a4 = L.circleMarker(
+                [22.633, 120.36],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_bf7ad260eda6e06a544006e7282ba0a4.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a3725589c1324cedc30545b0e032c4cd = L.circleMarker(
+                [22.629, 120.37],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_a3725589c1324cedc30545b0e032c4cd.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1010401c34a86e5e67f3d5a56d94b06 = L.circleMarker(
+                [22.629, 120.371],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_f1010401c34a86e5e67f3d5a56d94b06.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdc382d0b82fc640a6db693efa34a82c = L.circleMarker(
+                [22.629, 120.348],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_fdc382d0b82fc640a6db693efa34a82c.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0f5818d02e193d7b8e02e9504a48dbd = L.circleMarker(
+                [22.629, 120.384],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e0f5818d02e193d7b8e02e9504a48dbd.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf24482a87133cfdcfea4a3203fc902e = L.circleMarker(
+                [22.63, 120.36],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_cf24482a87133cfdcfea4a3203fc902e.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab39bbd00d5c9425bf31093c737cc9f2 = L.circleMarker(
+                [22.63, 120.361],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_ab39bbd00d5c9425bf31093c737cc9f2.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e249a61e2eed8e0cfbc1943f5ff2bf47 = L.circleMarker(
+                [22.63, 120.363],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e249a61e2eed8e0cfbc1943f5ff2bf47.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3054f5ef8100b2c74c1a41f62a987d38 = L.circleMarker(
+                [22.63, 120.373],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_3054f5ef8100b2c74c1a41f62a987d38.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d5db603c1dc32cc7de91e1dd1f63db13 = L.circleMarker(
+                [22.631, 120.341],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d5db603c1dc32cc7de91e1dd1f63db13.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_11eb0b3253fe6420a14946771db17c0e = L.circleMarker(
+                [22.631, 120.347],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_11eb0b3253fe6420a14946771db17c0e.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 2.0 -> 3月: 3.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d517dc92eaa685c76ffa74ae5e9d7e1a = L.circleMarker(
+                [22.629, 120.382],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_d517dc92eaa685c76ffa74ae5e9d7e1a.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a65ecd0519752c9467147a512b1bb076 = L.circleMarker(
+                [22.635, 120.372],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_a65ecd0519752c9467147a512b1bb076.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c600fdbe7933ddce5818ed619eca5867 = L.circleMarker(
+                [22.635, 120.365],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_c600fdbe7933ddce5818ed619eca5867.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ca468440638d66c3b9141d79398c4d7e = L.circleMarker(
+                [22.635, 120.363],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_ca468440638d66c3b9141d79398c4d7e.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9b0eb71390a7f06abae0fa6f940ece92 = L.circleMarker(
+                [22.635, 120.361],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_9b0eb71390a7f06abae0fa6f940ece92.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_880b4841a19135f39f4e607a9b64578d = L.circleMarker(
+                [22.635, 120.346],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_880b4841a19135f39f4e607a9b64578d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_37e0f92e4954a9c214e2eb889ba0572d = L.circleMarker(
+                [22.634, 120.369],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_37e0f92e4954a9c214e2eb889ba0572d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0e25fde6a3ed57c861a7039ef760fe1 = L.circleMarker(
+                [22.634, 120.364],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e0e25fde6a3ed57c861a7039ef760fe1.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c341f18562d4b324e9f92336fe064a99 = L.circleMarker(
+                [22.634, 120.356],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_c341f18562d4b324e9f92336fe064a99.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2c4df98a5c32c56d4d1fb9401fbc9c43 = L.circleMarker(
+                [22.634, 120.352],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_2c4df98a5c32c56d4d1fb9401fbc9c43.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_53005ae9a9666c2859760777c7d35608 = L.circleMarker(
+                [22.634, 120.35],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_53005ae9a9666c2859760777c7d35608.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e7c39788dc9a3bad8318dfeec97871b8 = L.circleMarker(
+                [22.633, 120.364],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e7c39788dc9a3bad8318dfeec97871b8.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_31efdbfa4ea70f66433f3b4917d486ac = L.circleMarker(
+                [22.638, 120.357],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_31efdbfa4ea70f66433f3b4917d486ac.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_029fadca52915ef9211cef108112775a = L.circleMarker(
+                [22.637, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_029fadca52915ef9211cef108112775a.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62241f214c90d724112e4768aae0f765 = L.circleMarker(
+                [22.638, 120.356],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_62241f214c90d724112e4768aae0f765.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_39828d5db92f261813173ee50fc01f34 = L.circleMarker(
+                [22.636, 120.359],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_39828d5db92f261813173ee50fc01f34.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95426a2b9a4dfb7fedd897aa1ac33c89 = L.circleMarker(
+                [22.636, 120.346],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_95426a2b9a4dfb7fedd897aa1ac33c89.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_50caff03d2ebebba232423f6bd3c564f = L.circleMarker(
+                [22.64, 120.375],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_50caff03d2ebebba232423f6bd3c564f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d7ec9b07f709a08cf556027bbc06495 = L.circleMarker(
+                [22.64, 120.37],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_4d7ec9b07f709a08cf556027bbc06495.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f7d9180de236d43a4fbc4e7c1e0e4139 = L.circleMarker(
+                [22.64, 120.367],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_f7d9180de236d43a4fbc4e7c1e0e4139.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_92a26f697c7e59cc7947015dc587cefa = L.circleMarker(
+                [22.64, 120.364],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_92a26f697c7e59cc7947015dc587cefa.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2d6f68ee5358893dd6b69143f7bc7f0f = L.circleMarker(
+                [22.638, 120.369],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_2d6f68ee5358893dd6b69143f7bc7f0f.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0f6c1dac581d2b0b16dd800b4b0e8e40 = L.circleMarker(
+                [22.642, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_0f6c1dac581d2b0b16dd800b4b0e8e40.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8399d3ab9009972f9547860c5e88bcf7 = L.circleMarker(
+                [22.641, 120.372],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_8399d3ab9009972f9547860c5e88bcf7.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2ab7f716d9debe953e3676dbf3ca1301 = L.circleMarker(
+                [22.641, 120.358],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_2ab7f716d9debe953e3676dbf3ca1301.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e1516e88efd30084aa738423a126426a = L.circleMarker(
+                [22.644, 120.348],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_e1516e88efd30084aa738423a126426a.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb4832c31352ec156e75f4086d3ca47d = L.circleMarker(
+                [22.642, 120.352],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_eb4832c31352ec156e75f4086d3ca47d.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_04ab5ef0a9a71160aeada78622591080 = L.circleMarker(
+                [22.644, 120.351],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_04ab5ef0a9a71160aeada78622591080.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_78dc2b40ac300378343a1559fe91ec39 = L.circleMarker(
+                [22.644, 120.365],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_78dc2b40ac300378343a1559fe91ec39.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_98255d805d4a8255c0d899e2136ad37b = L.circleMarker(
+                [22.645, 120.371],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_98255d805d4a8255c0d899e2136ad37b.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7dc44723585ecb161bfcdfdc30c8151c = L.circleMarker(
+                [22.645, 120.35],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_7dc44723585ecb161bfcdfdc30c8151c.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 1.0 -> 3月: 2.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1419684ec1466a08f92ac9d25e8b6d30 = L.circleMarker(
+                [22.646, 120.349],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_1419684ec1466a08f92ac9d25e8b6d30.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_869bb8cddebb7f561bbddc9bdcef3bf8 = L.circleMarker(
+                [22.648, 120.352],
+                {"bubblingMouseEvents": true, "color": "#FFB300", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FFB300", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_702ff30e80bec209a4020ccaa7f3a9c7);
+        
+    
+            circle_marker_869bb8cddebb7f561bbddc9bdcef3bf8.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 1.0 件 (2月: 0.0 -> 3月: 1.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_702ff30e80bec209a4020ccaa7f3a9c7.addTo(map_c38a0da6fa8085f81ca36dec333b9cd4);
+        
+    
+            var feature_group_807d8ca062473a4497e9f1b4d1556324 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_fc2ccaa83c3c793df2936973e0b4b9b6 = L.circleMarker(
+                [22.598, 120.336],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_807d8ca062473a4497e9f1b4d1556324);
+        
+    
+            circle_marker_fc2ccaa83c3c793df2936973e0b4b9b6.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 4.0 件 (2月: 1.0 -> 3月: 5.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_015c709480decbec38f5c0b9b86e25b5 = L.circleMarker(
+                [22.649, 120.344],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_807d8ca062473a4497e9f1b4d1556324);
+        
+    
+            circle_marker_015c709480decbec38f5c0b9b86e25b5.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 4.0 件 (2月: 0.0 -> 3月: 4.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_852819dd4e819d3b2545888f74abeee3 = L.circleMarker(
+                [22.628, 120.363],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_807d8ca062473a4497e9f1b4d1556324);
+        
+    
+            circle_marker_852819dd4e819d3b2545888f74abeee3.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 4.0 件 (2月: 4.0 -> 3月: 8.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_db16559eaae52a20979176d41546ff51 = L.circleMarker(
+                [22.59, 120.363],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_807d8ca062473a4497e9f1b4d1556324);
+        
+    
+            circle_marker_db16559eaae52a20979176d41546ff51.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 4.0 件 (2月: 0.0 -> 3月: 4.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_26ebc1d7e344d5dbf5cbc933728f50d1 = L.circleMarker(
+                [22.613, 120.351],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_807d8ca062473a4497e9f1b4d1556324);
+        
+    
+            circle_marker_26ebc1d7e344d5dbf5cbc933728f50d1.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 3.0 件 (2月: 1.0 -> 3月: 4.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b9adc1dc5b6b08a572b4c0cb6928cb4 = L.circleMarker(
+                [22.593, 120.328],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_807d8ca062473a4497e9f1b4d1556324);
+        
+    
+            circle_marker_2b9adc1dc5b6b08a572b4c0cb6928cb4.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 3.0 件 (2月: 0.0 -> 3月: 3.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d8c8c210c1d73dde11da064ae56674c = L.circleMarker(
+                [22.599, 120.337],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_807d8ca062473a4497e9f1b4d1556324);
+        
+    
+            circle_marker_1d8c8c210c1d73dde11da064ae56674c.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 3.0 件 (2月: 0.0 -> 3月: 3.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8f185111b2b7b518a5ee6f5841abb7d4 = L.circleMarker(
+                [22.61, 120.345],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_807d8ca062473a4497e9f1b4d1556324);
+        
+    
+            circle_marker_8f185111b2b7b518a5ee6f5841abb7d4.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 3.0 件 (2月: 0.0 -> 3月: 3.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_555c8112348996b8ddf6291e13db3f28 = L.circleMarker(
+                [22.626, 120.362],
+                {"bubblingMouseEvents": true, "color": "#FF4500", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#FF4500", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_807d8ca062473a4497e9f1b4d1556324);
+        
+    
+            circle_marker_555c8112348996b8ddf6291e13db3f28.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 3.0 件 (2月: 2.0 -> 3月: 5.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_807d8ca062473a4497e9f1b4d1556324.addTo(map_c38a0da6fa8085f81ca36dec333b9cd4);
+        
+    
+            var feature_group_cd7a75b9a2d89a90a8fff631712dd5c1 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_f9820b63666d09696496d11891653ac4 = L.circleMarker(
+                [22.631, 120.367],
+                {"bubblingMouseEvents": true, "color": "#8B0000", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8B0000", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_cd7a75b9a2d89a90a8fff631712dd5c1);
+        
+    
+            circle_marker_f9820b63666d09696496d11891653ac4.bindTooltip(
+                `<div>
+                     鳳山區惡化路口! 淨增加: 5.0 件 (2月: 2.0 -> 3月: 7.0)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_cd7a75b9a2d89a90a8fff631712dd5c1.addTo(map_c38a0da6fa8085f81ca36dec333b9cd4);
+        
+    
+            var layer_control_1b82a91d36defd6686ea27e5fb3a06cf_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_cdd37344c96db4b9d5d158039503eed1,
+                },
+                overlays :  {
+                    "\ud83d\udfe1 \u5fae\u5e45\u589e\u52a0 (1-2\u4ef6)" : feature_group_702ff30e80bec209a4020ccaa7f3a9c7,
+                    "\ud83d\udfe0 \u4e2d\u5ea6\u589e\u52a0 (3-4\u4ef6)" : feature_group_807d8ca062473a4497e9f1b4d1556324,
+                    "\ud83d\udd34 \u56b4\u91cd\u60e1\u5316 (5\u4ef6\u4ee5\u4e0a)" : feature_group_cd7a75b9a2d89a90a8fff631712dd5c1,
+                },
+            };
+            let layer_control_1b82a91d36defd6686ea27e5fb3a06cf = L.control.layers(
+                layer_control_1b82a91d36defd6686ea27e5fb3a06cf_layers.base_layers,
+                layer_control_1b82a91d36defd6686ea27e5fb3a06cf_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": false,
+  "autoZIndex": true,
+}
+            ).addTo(map_c38a0da6fa8085f81ca36dec333b9cd4);
+
+        
+</script>
+</html>
